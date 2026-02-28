@@ -40,12 +40,34 @@ public class Strings {
         for(int i =0;i<FullName.length();i++){         // implemented the ".length" method.
             char currenthar = FullName.charAt(i);
             if(currenthar == ' '){
-                System.out.println("charector "+(i+1)+" is a space");
+                System.out.println("character "+(i+1)+" is a space");
             }else{
-                System.out.println("charector "+(i+1)+" is "+currenthar);
+                System.out.println("character "+(i+1)+" is "+currenthar);
             }
 
         }
-//--------------------------------------------------------------
+//---------------------------------------------------------------
+
+// compareTo+-------------------------------------------------------
+
+
+        System.out.println("First Nmae: "+FirstName);
+        System.out.println("Last Name: "+LastName);
+
+        if(FirstName.compareTo(LastName)==0){
+            System.out.println("You Entered the same values for both first name and last name!!!");
+        }
+
+//---------------------------------------------------------------
+
+//subString+-----------------------------------------------------
+        System.out.println("Now, we will Select some parts of your name \ncheck the above character number list and tell me the range.");
+        System.out.println("Start value: ");
+        int FirstValue = sc.nextInt();
+        System.out.println("End value: ");
+        int SecondValue = sc.nextInt();
+
+        System.out.println("Your desired part is here: ");
+        System.out.println(FullName.substring(FirstValue-1,SecondValue));
     }
 }
