@@ -1,8 +1,8 @@
 package Sorting;
 
 public class BubbleSort{
-    public static void main(String a[]){
-        int numbers[] = {8,5,3,6,9,1};
+    static void main(){
+        int[] numbers= {8,5,3,6,9,1};
 
         for(int i=0;i<numbers.length-1;i++){
             for(int j=0;j<numbers.length-i-1;j++){
@@ -15,7 +15,7 @@ public class BubbleSort{
         }
 
         for(int i=0;i<numbers.length;i++){
-            System.out.println(numbers[i]);
+            System.out.print(numbers[i]+" ");
         }
     }
 }

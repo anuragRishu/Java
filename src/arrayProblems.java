@@ -10,7 +10,7 @@ public class arrayProblems {
         Scanner sc = new Scanner(System.in);
         System.out.println("please input the Length: ");
         int size = sc.nextInt();
-        int array [] = new int[size];
+        int[] array= new int[size];
 
 //      input loop
         for(int i =0;i<size;i++){
@@ -30,7 +30,7 @@ public class arrayProblems {
             }
         }
 
-    };
+    }
 
     public void TwoDArray(){
         //        problem statemen 2:
@@ -44,7 +44,7 @@ public class arrayProblems {
         System.out.println("Enter the array col: ");
         int col = sc.nextInt();
 
-        int twoDArray [][]= new int[row][col];
+        int[][] twoDArray= new int[row][col];
 
 //        input
         for(int i=0;i<row;i++){
@@ -69,7 +69,7 @@ public class arrayProblems {
 
     }
 
-    public static void main(String args[]){
+    static void main(){
 
         Scanner sc = new Scanner(System.in);
         System.out.println("1 for OneDArray\n2 for TwoDArray");
